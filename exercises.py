@@ -14,3 +14,17 @@ def frequencia(texto):
     
 texto = "o tempo perguntou ao tempo quanto tempo o tempo tem"
 frequencia(texto)
+
+# Apelidos by João and Miguel
+
+def apelidos(nomes):
+    n_separados = []
+    for pessoa in nomes:
+         n_separados.append(pessoa.split())
+    n_separados = sorted(sorted(n_separados), key=len)
+
+    result = []
+    for pessoa in n_separados:
+        result.append(" ".join(pessoa))
+    print(result)
+    return result
