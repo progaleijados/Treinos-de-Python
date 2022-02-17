@@ -41,7 +41,7 @@ def search(list):
     end = []
     # starts the loop - one by one, it analyses the elements in the list
     for elem_list in list:
-        # condition to stop the look
+        # condition to stop the loop
         if (elem_list > 500):
             break
             # conditions given by the exercise to choose which element goes to the new list
