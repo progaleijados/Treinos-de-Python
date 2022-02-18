@@ -48,3 +48,26 @@ def search(list):
         if (elem_list % 5 == 0 and elem_list <= 150):
             end.append(elem_list)
     return end
+
+def countDigit(n):
+    counter = 0
+    while n != 0:
+        n = n // 10
+        counter += 1
+    return counter
+
+print(countDigit(10))
+
+def reverseValues(list):
+    for elem in reversed(list):
+        print(elem)
+
+def reverseValues_1(list):
+    list.reverse()
+    for elem in list:
+        print(elem)
+
+def reverseValues_2(list):
+    rev_list = list[::-1]
+    for elem in rev_list:
+        print(elem)
