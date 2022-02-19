@@ -1,3 +1,5 @@
+import numpy
+
 # exercises from https://pynative.com/python-if-else-and-for-loop-exercise-with-solutions/
 
 # function that takes two numbers and sees if their product is greater than 1000; if the result is greater than 1000, it sums them instead
@@ -71,3 +73,28 @@ def reverseValues_2(list):
     rev_list = list[::-1]
     for elem in rev_list:
         print(elem)
+
+# write a Python program to sum all the elements in a list.
+def sumInList(lt):
+    result = 0
+    for element in lt:
+        result += element
+    print(result)
+
+
+def sumInList2(lt):
+    result = sum(lt)
+    print(result)
+
+
+# write a Python program to multiply all the items in a list.
+def multInList(lt):
+    result = 1
+    for element in lt:
+        result *= element
+    print(result)
+
+
+def multInList2(lt):
+    result = numpy.prod(lt) # can only be used on Python 3 or less
+    print(result)
